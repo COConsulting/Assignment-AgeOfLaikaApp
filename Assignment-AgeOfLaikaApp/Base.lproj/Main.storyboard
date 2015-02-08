@@ -41,7 +41,7 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="17" y="330" width="341" height="21"/>
+                                    <rect key="frame" x="17" y="243" width="341" height="21"/>
                                 </variation>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Dog's Age in Human Years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-Dk-gqn">
@@ -49,7 +49,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="222" width="343" height="30"/>
+                                    <rect key="frame" x="14" y="239" width="343" height="30"/>
                                 </variation>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d7-J1-GPt">
@@ -60,7 +60,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="270" width="343" height="30"/>
+                                    <rect key="frame" x="14" y="287" width="343" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="convertToDogYrs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lp-Wn-ifd"/>
@@ -75,6 +75,55 @@
                                     <rect key="frame" x="83" y="51" width="207" height="21"/>
                                 </variation>
                             </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17O-5J-eOa">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.30213585500000001" green="0.58792163389999996" blue="0.79148910979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Convert Another Dog's Age">
+                                    <color key="titleColor" red="0.93661545049999995" green="0.98661964970000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="15" y="287" width="342" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertAgainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkK-Hr-mYk"/>
+                                </connections>
+                            </button>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuH-2g-No6">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="5" y="239" width="12" height="21"/>
+                                </variation>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Dog's Name" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="G1p-Ah-CbW">
+                                <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="15" y="205" width="343" height="30"/>
+                                </variation>
+                            </textField>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-Ci-FNp">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="5" y="205" width="12" height="24"/>
+                                </variation>
+                            </label>
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter missing information above" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-UV-uSJ">
+                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="92" y="343" width="217" height="55"/>
+                                </variation>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -85,6 +134,11 @@
                                 <exclude reference="EaJ-Dk-gqn"/>
                                 <exclude reference="9d7-J1-GPt"/>
                                 <exclude reference="h0b-DF-8XX"/>
+                                <exclude reference="17O-5J-eOa"/>
+                                <exclude reference="nuH-2g-No6"/>
+                                <exclude reference="G1p-Ah-CbW"/>
+                                <exclude reference="gA7-Ci-FNp"/>
+                                <exclude reference="SVg-UV-uSJ"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -99,12 +153,23 @@
                                 <include reference="EaJ-Dk-gqn"/>
                                 <include reference="9d7-J1-GPt"/>
                                 <include reference="h0b-DF-8XX"/>
+                                <include reference="17O-5J-eOa"/>
+                                <include reference="nuH-2g-No6"/>
+                                <include reference="G1p-Ah-CbW"/>
+                                <include reference="gA7-Ci-FNp"/>
+                                <include reference="SVg-UV-uSJ"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="convertAgainButton" destination="17O-5J-eOa" id="Rdi-3i-V9Z"/>
+                        <outlet property="convertToDogYrsButton" destination="9d7-J1-GPt" id="Hfw-vs-yE4"/>
                         <outlet property="convertedDogAge" destination="yfe-NX-udv" id="ER1-B1-t4d"/>
                         <outlet property="enterDogAgeHumanYrs" destination="EaJ-Dk-gqn" id="IkD-RH-h6w"/>
+                        <outlet property="enterDogName" destination="G1p-Ah-CbW" id="pbB-Eh-cVN"/>
+                        <outlet property="errorMessage" destination="SVg-UV-uSJ" id="e07-Gq-w9E"/>
+                        <outlet property="errorMessageLabel" destination="nuH-2g-No6" id="t46-BX-y2h"/>
+                        <outlet property="errorNameLabel" destination="gA7-Ci-FNp" id="awc-7Z-pQA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
