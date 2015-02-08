@@ -106,22 +106,13 @@
                                     <rect key="frame" x="15" y="205" width="343" height="30"/>
                                 </variation>
                             </textField>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="*" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gA7-Ci-FNp">
+                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter an age above." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-UV-uSJ">
                                 <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                 <color key="textColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="5" y="205" width="12" height="24"/>
-                                </variation>
-                            </label>
-                            <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter missing information above" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SVg-UV-uSJ">
-                                <rect key="frame" x="0.0" y="-21" width="42" height="21"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
-                                <color key="textColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
-                                <nil key="highlightedColor"/>
-                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="92" y="343" width="217" height="55"/>
+                                    <rect key="frame" x="63" y="353" width="250" height="35"/>
                                 </variation>
                             </label>
                         </subviews>
@@ -137,7 +128,6 @@
                                 <exclude reference="17O-5J-eOa"/>
                                 <exclude reference="nuH-2g-No6"/>
                                 <exclude reference="G1p-Ah-CbW"/>
-                                <exclude reference="gA7-Ci-FNp"/>
                                 <exclude reference="SVg-UV-uSJ"/>
                             </mask>
                         </variation>
@@ -156,7 +146,6 @@
                                 <include reference="17O-5J-eOa"/>
                                 <include reference="nuH-2g-No6"/>
                                 <include reference="G1p-Ah-CbW"/>
-                                <include reference="gA7-Ci-FNp"/>
                                 <include reference="SVg-UV-uSJ"/>
                             </mask>
                         </variation>
@@ -169,7 +158,6 @@
                         <outlet property="enterDogName" destination="G1p-Ah-CbW" id="pbB-Eh-cVN"/>
                         <outlet property="errorMessage" destination="SVg-UV-uSJ" id="e07-Gq-w9E"/>
                         <outlet property="errorMessageLabel" destination="nuH-2g-No6" id="t46-BX-y2h"/>
-                        <outlet property="errorNameLabel" destination="gA7-Ci-FNp" id="awc-7Z-pQA"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

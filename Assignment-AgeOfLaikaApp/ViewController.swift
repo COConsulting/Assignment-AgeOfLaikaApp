@@ -17,7 +17,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var convertToDogYrsButton: UIButton!
     @IBOutlet weak var convertAgainButton: UIButton!
     @IBOutlet weak var errorMessageLabel: UILabel!
-    @IBOutlet weak var errorNameLabel: UILabel!
     @IBOutlet weak var errorMessage: UILabel!
     
 //  System set functions
@@ -35,38 +34,31 @@ class ViewController: UIViewController {
     @IBAction func convertToDogYrs(sender: UIButton) {
         
 //      Check for input, if none, report error, otherwise continue.
-        if(enterDogAgeHumanYrs.text=="" || enterDogName.text==""){
+        if(enterDogAgeHumanYrs.text==""){
             
-//          Reset all error messages incase a person makes an error, fixes one but not the other.
-            errorNameLabel.hidden=true
-            errorMessageLabel.hidden=true
-            
-            
-//          Unhide error message and error corresponding label near correct input box(es)
-            
+//          Unhide error message and error label near input box
             errorMessage.hidden=false
-            
-            if(enterDogName.text==""){
-                errorNameLabel.hidden=false
-            }
-            if(enterDogAgeHumanYrs.text==""){
-                errorMessageLabel.hidden=false
-            }
+            errorMessageLabel.hidden=false
             
         }else{
             
 //          Make sure that the error message and label are hidden.
             errorMessageLabel.hidden=true
-            errorNameLabel.hidden=true
             errorMessage.hidden=true
         
 //          Setup a new variable to equal the inputed human years and multiply that by 7
             var dogAgeDogYrs = (enterDogAgeHumanYrs.text.toInt()! * 7)
         
-//          Change Converted Age Label to being the calculated Age
-            convertedDogAge.text = "Your dog, "+enterDogName.text+", is \(dogAgeDogYrs) in Dog years."
+//          Check to see if name is inputed
+            if(enterDogName.text==""){
+//              Change Converted Age Label to being the calculated Age
+                convertedDogAge.text = "Your dog is \(dogAgeDogYrs) in dog years."
+            }else{
+//              Change Converted Age Label to being the calculated Age
+                convertedDogAge.text = enterDogName.text + " is \(dogAgeDogYrs) in dog years."
+            }
 
-//          Hide Input boxs and button
+//          Hide Input boxes and button
             enterDogAgeHumanYrs.hidden=true
             enterDogName.hidden=true
             convertToDogYrsButton.hidden=true
@@ -76,9 +68,9 @@ class ViewController: UIViewController {
             convertAgainButton.hidden=false
 
 //          CLEAN UP THE UI ELEMENTS
-//          Hide keyboard
+//          Hide keyboards
             enterDogAgeHumanYrs.resignFirstResponder()
-            
+            enterDogName.resignFirstResponder()
         }
     }
     
