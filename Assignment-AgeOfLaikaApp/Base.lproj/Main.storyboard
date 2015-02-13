@@ -47,7 +47,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Your Dog's Age in Human Years" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="EaJ-Dk-gqn">
                                 <rect key="frame" x="0.0" y="-30" width="97" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="14" y="239" width="343" height="30"/>
                                 </variation>
@@ -55,12 +55,12 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9d7-J1-GPt">
                                 <rect key="frame" x="-23" y="-15" width="46" height="30"/>
                                 <color key="backgroundColor" red="0.30213585500000001" green="0.58792163389999996" blue="0.79148910979999998" alpha="1" colorSpace="calibratedRGB"/>
-                                <state key="normal" title="Convert to Dog Years">
+                                <state key="normal" title="Dog Years">
                                     <color key="titleColor" red="0.93661545049999995" green="0.98661964970000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="14" y="287" width="343" height="30"/>
+                                    <rect key="frame" x="14" y="287" width="164" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="convertToDogYrs:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Lp-Wn-ifd"/>
@@ -83,7 +83,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="15" y="287" width="342" height="30"/>
+                                    <rect key="frame" x="72" y="287" width="230" height="30"/>
                                 </variation>
                                 <connections>
                                     <action selector="convertAgainButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vkK-Hr-mYk"/>
@@ -112,9 +112,23 @@
                                 <color key="textColor" red="1" green="0.0" blue="0.010051519910000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
-                                    <rect key="frame" x="63" y="353" width="250" height="35"/>
+                                    <rect key="frame" x="63" y="357" width="250" height="35"/>
                                 </variation>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UhU-Ad-isW">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.30213585500000001" green="0.58792163389999996" blue="0.79148910979999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Real Dog Years">
+                                    <color key="titleColor" red="0.93661545049999995" green="0.98661964970000005" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="194" y="287" width="163" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="convertToRealDogYrsButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="EjX-Ri-mQ4"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <variation key="default">
@@ -129,6 +143,7 @@
                                 <exclude reference="nuH-2g-No6"/>
                                 <exclude reference="G1p-Ah-CbW"/>
                                 <exclude reference="SVg-UV-uSJ"/>
+                                <exclude reference="UhU-Ad-isW"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -147,12 +162,14 @@
                                 <include reference="nuH-2g-No6"/>
                                 <include reference="G1p-Ah-CbW"/>
                                 <include reference="SVg-UV-uSJ"/>
+                                <include reference="UhU-Ad-isW"/>
                             </mask>
                         </variation>
                     </view>
                     <connections>
                         <outlet property="convertAgainButton" destination="17O-5J-eOa" id="Rdi-3i-V9Z"/>
                         <outlet property="convertToDogYrsButton" destination="9d7-J1-GPt" id="Hfw-vs-yE4"/>
+                        <outlet property="convertToRealDogYrsButton" destination="UhU-Ad-isW" id="LAp-90-C48"/>
                         <outlet property="convertedDogAge" destination="yfe-NX-udv" id="ER1-B1-t4d"/>
                         <outlet property="enterDogAgeHumanYrs" destination="EaJ-Dk-gqn" id="IkD-RH-h6w"/>
                         <outlet property="enterDogName" destination="G1p-Ah-CbW" id="pbB-Eh-cVN"/>
@@ -162,7 +179,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="304.5" y="429"/>
+            <point key="canvasLocation" x="295.5" y="453"/>
         </scene>
     </scenes>
     <resources>

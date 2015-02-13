@@ -38,6 +38,8 @@
 		338859251A86DC2D0038A753 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		338859261A86DC2D0038A753 /* Assignment_AgeOfLaikaAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assignment_AgeOfLaikaAppTests.swift; sourceTree = "<group>"; };
 		338859301A86DD9F0038A753 /* AgeOfLaika.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = AgeOfLaika.jpg; sourceTree = "<group>"; };
+		3395CA751A882FF100201E56 /* Testing Doubles.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Testing Doubles.playground"; path = "../../Playgrounds/Testing Doubles.playground"; sourceTree = "<group>"; };
+		33BC9AEB1A8D7DC000DF9808 /* Double Tests.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; name = "Double Tests.playground"; path = "../Assignment-AgeOfLaikaApp/Double Tests.playground"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +63,7 @@
 		338859021A86DC2C0038A753 = {
 			isa = PBXGroup;
 			children = (
+				3395CA751A882FF100201E56 /* Testing Doubles.playground */,
 				3388590D1A86DC2C0038A753 /* Assignment-AgeOfLaikaApp */,
 				338859231A86DC2D0038A753 /* Assignment-AgeOfLaikaAppTests */,
 				3388590C1A86DC2C0038A753 /* Products */,
@@ -101,6 +104,7 @@
 		338859231A86DC2D0038A753 /* Assignment-AgeOfLaikaAppTests */ = {
 			isa = PBXGroup;
 			children = (
+				33BC9AEB1A8D7DC000DF9808 /* Double Tests.playground */,
 				338859261A86DC2D0038A753 /* Assignment_AgeOfLaikaAppTests.swift */,
 				338859241A86DC2D0038A753 /* Supporting Files */,
 			);
@@ -411,6 +415,7 @@
 				3388592C1A86DC2D0038A753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3388592D1A86DC2D0038A753 /* Build configuration list for PBXNativeTarget "Assignment-AgeOfLaikaAppTests" */ = {
 			isa = XCConfigurationList;
@@ -419,6 +424,7 @@
 				3388592F1A86DC2D0038A753 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

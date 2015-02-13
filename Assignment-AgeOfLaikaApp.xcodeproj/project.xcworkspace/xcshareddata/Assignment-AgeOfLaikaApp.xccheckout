@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>738AF2B9-06B7-4E42-B89E-4461743EBB4A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Assignment-AgeOfLaikaApp</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>D9B1D46CDD80410221D843D8E792BB775D92D351</key>
+		<string>https://github.com/COConsulting/Assignment-AgeOfLaikaApp.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Assignment-AgeOfLaikaApp.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>D9B1D46CDD80410221D843D8E792BB775D92D351</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/COConsulting/Assignment-AgeOfLaikaApp.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>D9B1D46CDD80410221D843D8E792BB775D92D351</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>D9B1D46CDD80410221D843D8E792BB775D92D351</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Assignment-AgeOfLaikaApp</string>
+		</dict>
+	</array>
+</dict>
+</plist>
