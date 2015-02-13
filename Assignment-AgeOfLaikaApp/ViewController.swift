@@ -143,13 +143,8 @@ class ViewController: UIViewController {
                 dogAgeDogYrsDouble *= 10.5
                 
             }else{ //Then the age must be over 2
-//              Figure out how many years over 2 the dog is. (do 2.0 to make agePart1 a Double)
-                var agePart1 = 2.0
-                var agePart2 = dogAgeDogYrsDouble - agePart1
-                
 //              multiply the first 2 years by 10.5 and the remainer of the age by 4
-                dogAgeDogYrsDouble = (agePart1*10.5) + (agePart2*4)
-                
+                dogAgeDogYrsDouble = (2 * 10.5) + ((dogAgeDogYrsDouble - 2 ) * 4 )
             }
             
 //          Check to see if a message is already made
